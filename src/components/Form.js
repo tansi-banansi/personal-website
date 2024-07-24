@@ -15,7 +15,9 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">Name</label>
+          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+            Name
+          </label>
           <input
             type="text"
             id="name"
@@ -29,7 +31,9 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
         </div>
 
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">Email address</label>
+          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+            Email address
+          </label>
           <input
             type="email"
             id="email"
@@ -44,7 +48,9 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <label htmlFor="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">Message</label>
+        <label htmlFor="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          Message
+        </label>
         <textarea
           id="message"
           name="message"
