@@ -7,17 +7,14 @@ const Form = () => {
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      onSubmit='submit'
-      className="flex flex-col space-y-6">
-
-
+      className="flex flex-col space-y-6"
+    >
       <input type="hidden" name="form-name" value="contact"/>
-      <input type="hidden" name="bot-field" />
-    
+      <input type="hidden" name="bot-field"/>
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
-          <label for="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Name
           </label>
           <input
@@ -26,13 +23,12 @@ const Form = () => {
             name="name"
             placeholder="Enter your name"
             className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
-    
             required
           />
         </div>
 
         <div className="flex flex-col space-y-2 flex-1">
-          <label for="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Email address
           </label>
           <input
@@ -55,7 +51,6 @@ const Form = () => {
           name="message"
           placeholder="Write me a message"
           className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
-   
           required
         />
       </div>
