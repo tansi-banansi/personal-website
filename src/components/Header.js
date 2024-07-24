@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <button
             id="hamburger-button"
-            className="text-3xl md:hidden cursor-pointer"
+            className="text-2xl md:hidden cursor-pointer"
             onClick={toggleMenu}
           >
             &#9776;
