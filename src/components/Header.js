@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ThemeContainer from "../containers/ThemeContainer";
-import ThemeButton from "./ThemeButton";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
