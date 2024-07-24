@@ -5,8 +5,8 @@ const Form = ({formState, handleChange, handleSubmit}) => {
   return (
     <form name='contact' method='post' data-netlify="true" onSubmit={handleSubmit}  className='flex flex-col space-y-6' >
 
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" hidden/>
+      <input type="hidden" name="bot-field" hidden/>
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
