@@ -29,7 +29,7 @@ const Project = () =>{
                                 <p className='pl-3'>Bootstrap</p>
                             </div>
                             <div className='md:mt-2'>
-                                <a href='https://jammming-by-tans.netlify.app/authenticate ' target='_blank'><OpenInNewButton /></a>
+                                <a href='https://jammming-by-tans.netlify.app/authenticate ' target='_blank' rel="noreferrer"><OpenInNewButton /></a>
                             </div>
 
                         </div>
@@ -37,7 +37,7 @@ const Project = () =>{
                     </div>
 
                     <div className="flex justify-center md:justify-end items-stretch">
-                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/jammming-project.svg"/>
+                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/jammming-project.svg" alt='Jammming website screenshot'/>
                     </div>
 
                 </div>
@@ -45,7 +45,7 @@ const Project = () =>{
                 <div className="flex flex-col md:flex-row items-stretch gap-4 mt-14 mb-16 md:mb-0">
 
                     <div className="flex justify-center md:justify-start items-stretch">
-                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/business-website-project.svg"/>
+                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/business-website-project.svg" alt='Business website screenshot'/>
                     </div>
 
                     <div className=" w-full md:w-2/3 text-center md:text-start flex flex-col">
@@ -65,7 +65,7 @@ const Project = () =>{
                                 <p className='px-3'>Bootstrap</p>
                             </div>
                             <div className='md:mt-2'>
-                                <a href='https://tans-architecture.netlify.app/' target='_blank'><OpenInNewButton /></a>
+                                <a href='https://tans-architecture.netlify.app/' target='_blank' rel="noreferrer"><OpenInNewButton /></a>
                             </div>
 
                         </div>
@@ -92,7 +92,7 @@ const Project = () =>{
                                 <p className='pl-3'>React</p>
                             </div>
                             <div className='md:mt-2'>
-                                <a href='https://appointment-planner-by-tans.netlify.app/' target='_blank'><OpenInNewButton /></a>
+                                <a href='https://appointment-planner-by-tans.netlify.app/' target='_blank'rel="noreferrer"><OpenInNewButton /></a>
                             </div>
 
                         </div>
@@ -100,7 +100,7 @@ const Project = () =>{
                     </div>
 
                     <div className="flex justify-center md:justify-end items-stretch">
-                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/appointment-project.svg"/>
+                        <img className="object-cover w:4/5 md:w-full h-60 " src="./files/appointment-project.svg" alt='Appointment website screenshot'/>
                     </div>
 
                 </div>
