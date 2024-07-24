@@ -3,17 +3,17 @@ import React from 'react';
 const Form = () => {
   
   return (
-    <form name="contact" className='flex flex-col space-y-6' method='POST' netlify> 
+    <form name='contact' method='POST' data-netlify='true' onSubmit='submit' className='flex flex-col space-y-6' > 
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
-          <label for="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Name
           </label>
           <input
             type="text"
             id="name"
-            name="name"
+            name='name'
             placeholder="Enter your name"
             className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
             required
@@ -21,13 +21,13 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col space-y-2 flex-1">
-          <label for="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Email address
           </label>
           <input
             type="email"
             id="email"
-            name="email"
+            name='email'
             placeholder="Eg. example@email.com"
             className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
             required
@@ -36,12 +36,12 @@ const Form = () => {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <label for="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+        <label htmlFor="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
           Message
         </label>
         <textarea
           id="message"
-          name="message"
+          name='message'
           placeholder="Write me a message"
           className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
           required
