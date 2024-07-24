@@ -4,7 +4,7 @@ const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
 
     const myForm = e.target;
     const formData = new FormData(myForm);
@@ -26,7 +26,7 @@ const Form = () => {
     <form
       name="contact"
       method="POST"
-      data-netlify="true"
+      netlify
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="flex flex-col space-y-6"
