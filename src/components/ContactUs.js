@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from '../context/ThemeContext';
-import Form from "./Form";
+import FormContainer from './containers/FormContainer'
+
 
 const ContactUs = () =>{
     const {theme} = useTheme();
@@ -27,7 +28,7 @@ const ContactUs = () =>{
                     </div>
 
                     <div className="w-full md:w-2/3" >
-                        <Form />   
+                        <FormContainer />   
                     </div>
                 </div>
 

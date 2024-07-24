@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Form from '../components/Form';
+import React, { useState } from "react";
+import Form from "./Form"; // Adjust the import path as needed
 
 const FormContainer = () => {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -35,10 +35,6 @@ const FormContainer = () => {
       handleSubmit={handleSubmit} 
     />
   );
-
-
-
-
 };
 
 export default FormContainer;
