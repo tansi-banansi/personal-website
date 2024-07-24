@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Form = () => {
-  
+const Form = ({formState, handleChange, handleSubmit}) => {
+
   return (
-    <form name='contact' method='post' data-netlify="true" onSubmit='submit' className='flex flex-col space-y-6' > 
+    <form name='contact' method='post' data-netlify="true" onSubmit={handleSubmit}  className='flex flex-col space-y-6' >
+
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
@@ -15,6 +17,8 @@ const Form = () => {
             type="text"
             id="name"
             name='name'
+            value={formState.name}
+            onChange={handleChange}
             placeholder="Enter your name"
             className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
             required
@@ -29,6 +33,8 @@ const Form = () => {
             type="email"
             id="email"
             name='email'
+            value={formState.email}
+            onChange={handleChange}
             placeholder="Eg. example@email.com"
             className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
             required
@@ -43,6 +49,8 @@ const Form = () => {
         <textarea
           id="message"
           name='message'
+          value={formState.message}
+          onChange={handleChange}
           placeholder="Write me a message"
           className="p-2 dark:bg-neutral-700 rounded-lg border border-neutral-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-neutral-500 shadow-sm"
           required
@@ -60,7 +68,5 @@ const Form = () => {
 };
 
 export default Form;
-
-
 
 
