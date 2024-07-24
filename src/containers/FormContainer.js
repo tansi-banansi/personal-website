@@ -18,7 +18,7 @@ const FormContainer = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString()
+      body: new URLSearchParams(data).toString(),
     })
       .then(() => setIsSubmitted(true))
       .catch((error) => alert(error));
