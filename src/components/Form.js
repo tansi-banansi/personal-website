@@ -4,19 +4,16 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
   return (
     <form
       name="contact"
-      method="post"
+      method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="flex flex-col space-y-6"
     >
-      <div hidden>
-        <input  name="form-name" />
-        <input  name="bot-field" />
-
-      </div>
-     
-      
+      <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden">
+        <label>Don’t fill this out: <input name="bot-field" onChange={handleChange} /></label>
+      </p>
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
           <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
