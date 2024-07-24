@@ -7,7 +7,10 @@ const FormContainer = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormState({ ...formState, [name]: value });
+    setFormState((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
   };
 
   const handleSubmit = (e) => {

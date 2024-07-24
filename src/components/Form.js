@@ -8,15 +8,16 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
       data-netlify="true"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
-      className="flex flex-col space-y-6"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <p className="hidden">
-        <label>Don’t fill this out: <input name="bot-field" onChange={handleChange} /></label>
-      </p>
+      className="flex flex-col space-y-6">
+
+
+      <input type="hidden" name="form-name" value="contact"/>
+      <input type="hiddne" name="bot-field" />
+    
+
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label for="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Name
           </label>
           <input
@@ -32,7 +33,7 @@ const Form = ({ formState, handleChange, handleSubmit }) => {
         </div>
 
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label for="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Email address
           </label>
           <input
