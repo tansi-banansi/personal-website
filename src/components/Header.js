@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ThemeContainer from "../containers/ThemeContainer";
+import ThemeButton from "./ThemeButton";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,13 @@ const Header = () => {
         <div className="flex-shrink-0">
           <a href="#hero" className="text-2xl font-bold">Todorova</a>
         </div>
-        <div>
+        <div className="flex flex-row justify-center items-center">
+          <div className="w-5 h-5 mx-4 md:hidden">
+            <ThemeContainer />
+          </div>
           <button
             id="hamburger-button"
-            className="text-2xl md:hidden cursor-pointer"
+            className="text-3xl md:hidden cursor-pointer"
             onClick={toggleMenu}
           >
             &#9776;
@@ -52,6 +56,7 @@ const Header = () => {
             <li><a className="hover:opacity-80" href="#journey">journey</a></li>
             <li><a className="hover:opacity-80" href="#project">project</a></li>
             <li><a className="hover:opacity-80" href="#contact">contact</a></li>
+            <li><a href="./files/TanyaTodorova_CV.pdf" download="TT_Resume" className="hover:opacity-80">resume</a></li>
           </ul>
         </nav>
       )}
