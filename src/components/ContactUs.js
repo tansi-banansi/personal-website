@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from '../context/ThemeContext';
-import FormContainer from './FormContainer';
+import FormContainer from "../containers/FormContainer";
 
 const ContactUs = () => {
     const { theme } = useTheme();
