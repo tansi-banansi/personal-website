@@ -1,42 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Form = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => setIsSubmitted(true))
-      .catch((error) => alert(error));
-  };
-
-  if (isSubmitted) {
-    return <p className="text-center text-lg font-medium">Thank you! Your message has been sent.</p>;
-  }
-
+  
   return (
-    <form
-      name="contact"
-      method="POST"
-      netlify
-      netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
-      className="flex flex-col space-y-6"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
+    <form name="contact" className='flex flex-col space-y-6' method='POST' netlify> 
 
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label for="name" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Name
           </label>
           <input
@@ -50,7 +21,7 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col space-y-2 flex-1">
-          <label htmlFor="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+          <label for="email" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
             Email address
           </label>
           <input
@@ -65,7 +36,7 @@ const Form = () => {
       </div>
 
       <div className="flex flex-col space-y-2">
-        <label htmlFor="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+        <label for="message" className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
           Message
         </label>
         <textarea
