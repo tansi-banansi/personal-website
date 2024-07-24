@@ -15,12 +15,12 @@ const Header = () => {
           <a href="#hero" className="text-2xl font-bold">Todorova</a>
         </div>
         <div className="flex flex-row justify-center items-center">
-          <div className="w-5 h-5 mx-4 md:hidden">
+          <div className="w-5 h-5 mx-4 md:hidden items-center justify-center">
             <ThemeContainer />
           </div>
           <button
             id="hamburger-button"
-            className="text-2xl md:hidden cursor-pointer"
+            className="text-3xl md:hidden cursor-pointer"
             onClick={toggleMenu}
           >
             &#9776;

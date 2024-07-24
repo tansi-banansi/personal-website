@@ -11,7 +11,7 @@ import { useTheme } from "../context/ThemeContext";
 const HomePage = () => {
   const {theme} = useTheme();
   return (
-    <div className="min-h-screen scroll-smooth font-serif w-full ">
+    <div className="min-h-screen scroll-smooth font-serif w-full">
       <Header />
       <Hero />
       <About />
