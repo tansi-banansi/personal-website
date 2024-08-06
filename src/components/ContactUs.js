@@ -19,7 +19,7 @@ const ContactUs = () => {
               </a>
               <p>London, United Kingdom</p>
               <p>+44 [0] 7471 823 334</p>
-              <p>+359 [0] 88 661 0875</p>
+              <p>+359 [0] 87 708 8281</p>
               <div className="flex flex-row mb-3">
                 <a href="https://www.linkedin.com/in/tanya-todorova-46654417a/" target='_blank' rel="noreferrer" className="mr-2">
                   <img src={theme === 'dark' ? './files/linkedin-dark-mode.svg' : './files/linkedin-light-mode.svg'} alt="LinkedIn Icon" className='size-5 hover:opacity-60 flex items-center' />
