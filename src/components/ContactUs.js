@@ -24,9 +24,7 @@ const ContactUs = () => {
                 <a href="https://www.linkedin.com/in/tanya-todorova-46654417a/" target='_blank' rel="noreferrer" className="mr-2">
                   <img src={theme === 'dark' ? './files/linkedin-dark-mode.svg' : './files/linkedin-light-mode.svg'} alt="LinkedIn Icon" className='size-5 hover:opacity-60 flex items-center' />
                 </a>
-                <a href="https://github.com/tansi-banansi" target='_blank' rel="noreferrer">
-                  <img src={theme === 'dark' ? './files/github-dark-mode.svg' : './files/github-light-mode.svg'} alt="GitHub Icon" className='size-5 hover:opacity-60 flex items-center' />
-                </a>
+                
               </div>
             </div>
   
