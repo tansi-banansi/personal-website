@@ -34,7 +34,7 @@ const Project = () =>{
                             <p className='px-3'>Tailwind</p>
                         </div>
                         <div className='md:mt-2'>
-                            <a href='#' target='_blank' rel="noreferrer" className='pointer-events-none' ><OpenInNewButton /></a>
+                            <a href='https://main--tiny-maamoul-2a4a34.netlify.app/?fbclid=IwY2xjawFCm51leHRuA2FlbQIxMAABHTTMZNd5Ylb_TLJhmGb8QH_51v1k6W5sdGmfrG--iZE1qAyN00RF3isHQw_aem_PVN_5Ws6OgFNOEdd72o1sg' target='_blank' rel="noreferrer" className='pointer-events-none' ><OpenInNewButton /></a>
                         </div>
 
                     </div>
